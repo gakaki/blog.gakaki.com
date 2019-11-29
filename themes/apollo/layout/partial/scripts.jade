@@ -9,20 +9,4 @@ if ga
         != '"' + ga + '"'
         | ,'auto');ga('send','pageview');
     
-// webp
-script
-        | var isSupportWebp = function () {
-        |   try {
-        |       return document.createElement('canvas').toDataURL('image/webp', 0.5).indexOf('data:image/webp') === 0;
-        |    } catch(err) {
-        |        return false;
-        |    }
-        | }
-        | console.log("是否支持webp",isSupportWebp())
-        |document.addEventListener("DOMContentLoaded", function() {
-        |    let images = document.getElementsByTagName("img")
-        |    for(var i=0;i< images.length;i++){
-        |        images[i].src  = images[i].src + "?imageMogr2/format/webp" 
-        |    }
-        |})
-  
+
