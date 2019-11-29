@@ -1,0 +1,26 @@
+menu:
+    # Archive: 
+    Blog: /
+    # Weibo: http://weibo.com/sunchongsheng
+    GitHub: https://github.com/pinggod
+    Rss: /atom.xml
+
+mode: archives
+
+favicon: /favicon.png
+logo: /favicon.png
+
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Comment
+# e.g disqus: seansun
+disqus:
+duoshuo:
+
+# Analytics
+# google-analytics:
+# ga: UA-xxxxxxxx-x
+
+# Copyright Infomation
+startyear: 2015
