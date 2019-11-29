@@ -49,7 +49,7 @@ tags:
 [Info.plist]（./ Products / xcframeworks / DynamicFramework.xcframework）bundle 包含了所有可用框架frameworks。 Xcode在链接期间使用此信息=> xcodebuild会为我们要构建的平台选择正确的框架framework
 
 xcframework的结构看起来如下
-![xcframework](http://blog.studio515.cn/2019_12_xcframework/xcframework.png)
+![xcframework](https://midu.studio515.cn/2019_12_xcframework/xcframework.png)
 
 ## xcframework的大小
 “xcframework”的大小小于相应的“ fat framework”的大小。我测试了纯swift和 oc混合框架。
@@ -117,7 +117,7 @@ xcodebuild archive \
 ## 2. 创建xcframework 从产物中
 `xcodebuild` Xcodebuild 允许您通过指定框架、库来创建 xcframework，甚至可以将header添加到库中。
 
-![-create-xcframework](http://blog.studio515.cn/2019_12_xcframework/xcodebuild_create_xc_framework.png)
+![-create-xcframework](https://midu.studio515.cn/2019_12_xcframework/xcodebuild_create_xc_framework.png)
 
 ###### 1. 指定要添加到. xcframework 中的所有框架或库
 ###### 2. 指定输出路径,使用-output参数. 不要忘记加上.xcframework 添加到您的输出路径
@@ -133,7 +133,7 @@ xcodebuild -create-xcframework \
 一旦你的模块声明 `.swiftinterface` (描述框架的公共接口以及链接器标志、使用的工具链和其他信息)文件。
 Swift interface 文件 ，可以在框架的 swiftmodule 文件夹下找到 Swiftinterface 文件是在 xcframework 创建时自动生成的。
 
-![swift-interface](http://blog.studio515.cn/2019_12_xcframework/swiftinterface.png)
+![swift-interface](https://midu.studio515.cn/2019_12_xcframework/swiftinterface.png)
 
 ## 使用create_xcframeworks.sh生成ios和ios模拟器的xcframeworks
 
@@ -146,7 +146,7 @@ Swift interface 文件 ，可以在框架的 swiftmodule 文件夹下找到 Swif
 - 根据 scheme `StaticLibrary` 归档 并 创建. xcframework           （从静态库生成.xcframework)
 - 根据 scheme `DynamicFramework` 归档 并 创建. xcframework        （从动态库生成.xcframework)
 
-![生成的 xcframework](http://blog.studio515.cn/2019_12_xcframework/generated_xcframework.png)
+![生成的 xcframework](https://midu.studio515.cn/2019_12_xcframework/generated_xcframework.png)
 
 `使用方法`
 
@@ -194,10 +194,10 @@ Swift interface 文件 ，可以在框架的 swiftmodule 文件夹下找到 Swif
 
 # 如何在项目中集成XCFramework
 1. 手动将 xcframework 拖放到项目目标中
-![Drag & drop xcframework](http://blog.studio515.cn/2019_12_xcframework/xcframework_drag_n_drop.gif)
+![Drag & drop xcframework](https://midu.studio515.cn/2019_12_xcframework/xcframework_drag_n_drop.gif)
 
 2. 在项目目标中 嵌入 & 签名 .xcframework 到你的项目targert中
-![Embed & sign .xcframework](http://blog.studio515.cn/2019_12_xcframework/xcframework_embed_sign.png)
+![Embed & sign .xcframework](https://midu.studio515.cn/2019_12_xcframework/xcframework_embed_sign.png)
 
 ---
 
@@ -209,7 +209,7 @@ Swift interface 文件 ，可以在框架的 swiftmodule 文件夹下找到 Swif
 - `TextAttributes` - 外部引用的Swift Package
 - `Sample` - 例子项目 宝航了上面所有的依赖
 
-![swift-interface](http://blog.studio515.cn/2019_12_xcframework/project.png)
+![swift-interface](https://midu.studio515.cn/2019_12_xcframework/project.png)
 
 ---
 

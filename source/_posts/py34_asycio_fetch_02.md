@@ -26,7 +26,7 @@ uvloop是基于nodejs v8 engine的libuv库的python桥接调用.
 beautifulsoap是py家的html解析库了,支持css3选择符,使用率太高.
 
 运行效果:
-    ![20170613-py-fetch-06](/media/20170613-py-fetch-06.png)
+    ![20170613-py-fetch-06](https://midu.studio515.cn/2017/20170613-py-fetch-06.png)
 
 ### 代码解说
     final_res = []          //存放最后导出的json数据
