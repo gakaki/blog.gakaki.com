@@ -3,7 +3,23 @@
 .copyright p{
     position: relative;
 }
-.copyright p object{
+
+.copyright a.upyun{
     position: absolute;
-    top: -31px;
+    display: block;
+    top: -8px;
+    right: 87px;
+} 
+
+@media screen and (max-width: 700px){
+    .copyright a.upyun{
+        position: absolute;
+        display: block;
+        top: calc(112%);
+        left: calc(23%);
+    } 
 }
+
+.copyright a.upyun img{
+    width: 70px;
+} 
