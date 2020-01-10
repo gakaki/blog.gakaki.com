@@ -2,10 +2,9 @@
 title: Wasmtime WebAssembly 教程
 date: 2019-12-10 19:20:18
 categories:
-- iOS
+- Web
 tags:
-- iOS
-- Swift
+- Web
 ---
 
 WASM 成为 HTML、CSS 与 JS 之后的第 4 门 Web 语言。
