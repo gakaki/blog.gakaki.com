@@ -1,6 +1,6 @@
 ---
-title: 持续交付系统的简单流程
-date: 2019-10-28 19:20:18
+title: 自研持续交付系统的流程
+date: 2018-10-28 19:20:18
 categories:
 - devops
 tags:
